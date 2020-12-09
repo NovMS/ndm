@@ -1,0 +1,79 @@
+{
+	"all_bases": {
+		"sms_user": {
+			"desc": "Информация о пользователях",
+			"requests": [
+				"getConfig",
+				"resetUserDates",
+				"setFavCharts",
+				"setUserCommonFilters",
+				"setUserDates",
+				"setUserFilters",
+				"setUserLegend"
+			]
+		},
+		"sms_charts": {
+			"desc": "Информация о графиках",
+			"requests": [
+				"getConfig",
+				"getChartInfo",
+				"getDataForBarChart",
+				"getDataForLineChart",
+				"getDataForPieChart"
+			]
+		},
+		"sms_page": {
+			"desc": "Структура страниц",
+			"requests": ["getConfig"]
+		},
+		"sms_mapping": {
+			"desc": "На каких страницах находятся графики",
+			"requests": [
+				"getConfig",
+				"getDataForLineChart"
+			]
+		},
+		"sms_data_schema": {
+			"desc": "Схема с таблицами данных",
+			"requests": [
+				"getDataForBarChart",
+				"getDataForLineChart",
+				"getDataForPieChart"
+			]
+		},
+		"etalon": {
+			"desc": "Маркеры",
+			"requests": [
+				"getDataForLineChart"
+			]
+		}
+	},
+
+
+	"dev": {
+		"sms_user": "userdata.sms_user",
+		"sms_charts": "service.sms_charts",
+		"sms_page": "service.sms_page",
+		"sms_mapping": "service.sms_mapping",
+		"sms_data_schema": "sms_prod",
+		"etalon": "service.etalon"
+	},
+
+	"test": {
+		"sms_user": "userdata.sms_user",
+		"sms_charts": "service.sms_charts",
+		"sms_page": "service.sms_page",
+		"sms_mapping": "service.sms_mapping",
+		"sms_data_schema": "sms_prod",
+		"etalon": "service.etalon"
+	},
+
+	"prod": {
+		"sms_user": "userdata.sms_user",
+		"sms_charts": "service.sms_charts",
+		"sms_page": "service.sms_page",
+		"sms_mapping": "service.sms_mapping",
+		"sms_data_schema": "sms_prod",
+		"etalon": "service.etalon"
+	}
+}
